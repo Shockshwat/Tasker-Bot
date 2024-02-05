@@ -7,3 +7,5 @@ client = commands.Bot(
     help_command=None,
     case_insensitive=True,
 )
+with open("data.txt", "r") as f:
+    token = f.read()
