@@ -30,9 +30,8 @@ class CheckTasks(commands.Cog):
         if tasks:
             response = "Here are your pending tasks:\n"
             for task in tasks:
-                response += (
-                    f"Task ID: {task[0]}, Description: {task[2]}, Deadline: {task[3]}\n"
-                )
+                response += f"Task ID: {task[0]}, Description: {task[2]}\n"
+            response += "Complete the tasks before 9:00AM tomorrow."
         else:
             response = "You have no pending tasks."
 
