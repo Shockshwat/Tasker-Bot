@@ -6,6 +6,7 @@ import random
 import datetime
 import sqlite3
 import pytz
+
 client = bot.client
 
 
@@ -59,7 +60,7 @@ class UploadTask(commands.Cog):
             f"{user.mention} You have a new task! ID: {task_id} \n ```{task}```"
         )
         await ctx.respond(
-            f"Task {task} with ID {task_id} has been uploaded to the task list",
+            f"Task {task} with ID {task_id} has been given to {user.mention}",
         )
 
 
